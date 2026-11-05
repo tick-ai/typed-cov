@@ -1,0 +1,18 @@
+[project]
+name = "typed-cov"
+version = "0.1.0"
+description = "How much of a Python package has type hints, and exactly what does not: per-file annotation coverage with the file and line of each gap."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+keywords = ["typing", "type hints", "coverage", "python", "ci"]
+
+[project.scripts]
+typed-cov = "typed_cov:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["typed_cov"]
